@@ -1,0 +1,14 @@
+name: KinD Cluster Setup
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  setup-kind-cluster:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: Set up KinD
+        uses: kyma-project/cli@v2
+        with:
+          args: cluster create my-cluster
