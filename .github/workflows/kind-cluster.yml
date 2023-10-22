@@ -30,7 +30,7 @@ jobs:
           chmod +x ./kind
           ./kind create cluster --name my-cluster
       - name: Check Cluster Info
-        run: | 
-          kubectl cluster-info
-          kubectl get nodes
-          kubectl version
+        run: |
+          kubectl get nodes 
+        # kubectl cluster-info
+        # kubectl version
