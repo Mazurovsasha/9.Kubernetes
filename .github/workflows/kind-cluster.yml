@@ -9,6 +9,6 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: Set up KinD
-        uses: kyma-project/cli@latest
+        uses: kyma-project/cli@2.19
         with:
           args: cluster create my-cluster
